@@ -54,7 +54,7 @@ server.on('listening', () => {
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://imersi.vercel.app/'
+    origin: 'https://imersi.vercel.app'
   }
 });
 

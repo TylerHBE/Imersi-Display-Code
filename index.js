@@ -54,7 +54,7 @@ server.on('listening', () => {
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000'
+    origin: 'https://imersi-l062rt4sn-tyler-hickersons-projects.vercel.app'
   }
 });
 

@@ -17,7 +17,7 @@ dbConnect();
  * Using CORS, a server can explicitly allow some cross-origin requests while rejecting others. 
  */
 // router.use(cors()); 
-app.use(cors({ origin: 'https://imersi-l062rt4sn-tyler-hickersons-projects.vercel.app' }));
+app.use(cors({ origin: 'https://imersi.vercel.app/' }));
 
 // body parser configuration
 app.use(bodyParser.json());

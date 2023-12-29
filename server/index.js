@@ -200,7 +200,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (gameObject.users.some((user) => JSON.stringify(user.token) === JSON.stringify(decodedToken) && user.email === email)) {
 
@@ -355,7 +355,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -417,7 +417,7 @@ io.on('connection', (socket) => {
             try {
 
               //check if the token matches the supposed origin
-              const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+              const decodedToken = await jwt.verify(token, "---");
 
               if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -540,7 +540,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -630,7 +630,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -698,7 +698,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -817,7 +817,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
@@ -903,7 +903,7 @@ io.on('connection', (socket) => {
           try {
 
             //check if the token matches the supposed origin
-            const decodedToken = await jwt.verify(token, "RANDOM-TOKEN");
+            const decodedToken = await jwt.verify(token, "---");
 
             if (JSON.stringify(decodedToken) === JSON.stringify(gameObject.creatorToken) && email === gameObject.creatorEmail) {
 
